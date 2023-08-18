@@ -30,9 +30,9 @@ public class main {
             System.out.println("5. Obtener Primero");
             System.out.println("6. Obtener Ultimo");
             System.out.println("7. Saber el valor de un index");
-            // System.out.println("8. SET");
-            // System.out.println("9. INSERT");
-            // System.out.println("10. REMOVE");
+            System.out.println("8. SET");
+            System.out.println("9. INSERT");
+            System.out.println("10. REMOVE");
             // System.out.println("11. REVERT");
             System.out.println("12. Imprimir Toda la lista");
             System.out.println("13. Salir!!?\n");
@@ -78,28 +78,28 @@ public class main {
                     values = scanner.nextInt();
                     System.out.println(doublelinkedList.get(values).value);
                     break;
-                // case 8:
-                //     //Cambiar el valor de un nodo con index SET
-                //     System.out.println("\nIngresa el index");
-                //     values = scanner.nextInt();
-                //     System.out.println("Ingresa el valor");
-                //     values = scanner.nextInt();
-                //     doublelinkedList.set(values, values);
-                //     break;
-                // case 9:
-                //     //INSERT colocar un nodo en una posicion
-                //     System.out.println("\nIngresa el index");
-                //     values = scanner.nextInt();
-                //     System.out.println("Ingresa el valor");
-                //     values = scanner.nextInt();
-                //     doublelinkedList.insert(values, values);
-                //     break;
-                // case 10:
-                //     //REMOVE borrar un nodo
-                //     System.out.println("\nIngresa el index");
-                //     values = scanner.nextInt();
-                //     doublelinkedList.remove(values);
-                //     break;
+                case 8:
+                    //Cambiar el valor de un nodo con index SET
+                    System.out.println("\nIngresa el index");
+                    values = scanner.nextInt();
+                    System.out.println("Ingresa el valor");
+                    choice = scanner.nextInt();
+                    doublelinkedList.set(values, choice);
+                    break;
+                case 9:
+                    //INSERT colocar un nodo en una posicion
+                    System.out.println("\nIngresa el index");
+                    values = scanner.nextInt();
+                    System.out.println("Ingresa el valor");
+                    choice = scanner.nextInt();
+                    doublelinkedList.insert(values, choice);
+                    break;
+                case 10:
+                    //REMOVE borrar un nodo
+                    System.out.println("\nIngresa el index");
+                    values = scanner.nextInt();
+                    doublelinkedList.remove(values);
+                    break;
                 // case 11:
                 //     doublelinkedList.reverse();
                 //     System.out.println("La lista a sido invertida");
