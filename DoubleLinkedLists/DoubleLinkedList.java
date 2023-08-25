@@ -158,7 +158,7 @@ public class DoubleLinkedList {
 
         before.next = newNode;
         after.prev = newNode;
-
+        length ++;
         return true;
     }
 
